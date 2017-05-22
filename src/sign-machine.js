@@ -1,5 +1,5 @@
 /*!
-  sign-machine V2 | ©Nick Freear, 2017-05-21.
+  sign-machine V2 | ©Nick Freear, 2017-05-21 | License: MIT.
 */
 
 window.jQuery(function ($) {

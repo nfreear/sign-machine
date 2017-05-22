@@ -16,7 +16,6 @@ graphics/*.gif
 node_modules/   ~~  Via: npm install
 src/sign-machine.js
 style/sign-machine.{ less css }
-.gitignore
 index.html
 package.json
 ```
@@ -60,7 +59,6 @@ graphics/*.gif
 includes/*.{ js css png }
 lib/*.{ php bookmarklet.js user..js }
 wikidemo/index.php
-.htaccess
 index.php
 ```
 
@@ -68,13 +66,15 @@ index.php
 
 > Initial commit of sign-machine aka. "BSM". Author/ Copyright 2008-08-30 Nicholas Freear (except graphics).
 
-
 * GitHub: [nfreear/sign-machine][gh]
 * Bitbucket: [nfreear/sign-machine][bit]
 * v1.x PHP demo: [freear.org.uk/sign?text=Hello][php]
 
----
-© 2008-2017 [Nick Freear][blog]. All rights reserved. (`UNLICENSED` _for now_.) [@nfreear][].
+## License
+
+License: [MIT][].
+
+© 2008-2017 [Nick Freear][blog]. [@nfreear][].
 
 
 [gh]: https://github.com/nfreear/sign-machine
@@ -85,6 +85,7 @@ index.php
 
 [RawGit]: https://rawgit.com/
     "Serves Git files with the correct mime-type; content delivery network (CDN)"
+[MIT]: https://nfreear.mit-license.org/ "MIT License"
 [travis]: https://travis-ci.org/nfreear/sign-machine "Build status – Travis-CI (NPM/eslint)"
 [travis-icon]: https://api.travis-ci.org/nfreear/sign-machine.svg
 [semi]: https://github.com/Flet/semistandard "Javascript coding style — 'semistandard'"
