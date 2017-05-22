@@ -1,0 +1,40 @@
+/*!
+  sign-machine V2 | ©Nick Freear, 2017-05-21.
+*/
+.sign-machine-v2-js {
+  background: #fbfbfb;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #222;
+  font: 1.2em sans-serif;
+  min-height: 130px;
+  padding: 1em 1em 0;
+}
+.sign-machine-v2-js input,
+.sign-machine-v2-js button {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1em;
+  padding: 3px 12px;
+}
+.sign-machine-v2-js input[type=submit],
+.sign-machine-v2-js button {
+  background: #eee;
+  cursor: pointer;
+}
+.sign-machine-v2-js form,
+.sign-machine-v2-js .letter,
+.sign-machine-v2-js .space {
+  display: block;
+  margin: 0 auto .5em;
+}
+.sign-machine-v2-js .letter,
+.sign-machine-v2-js .space {
+  background: #fff;
+  border: 5px dashed darkorange;
+  border-radius: 5px;
+  max-width: 120px;
+  min-height: 110px;
+  min-width: 110px;
+  padding: .6em 1em;
+}

@@ -1,6 +1,6 @@
 
 *.html
-*.css
+# *.css
 *.php
 *.log
 node_modules/

@@ -23,14 +23,24 @@ package.json
 
 ### Usage
 
-HTML web-page snippet:
+HTML web-page snippet - via [RawGit][] (production):
 
 ```html
-<div id="id-sign-machine"></div>
+<div id="id-sign-machine">[ sign-machine requires Javascript ]</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/nfreear/sign-machine/2.0-alpha/src/sign-machine.js"></script>
+```
+
+Local hosting, with an optional `value` set:
+
+```html
+<div id="id-sign-machine" data-sign-machine='{ "initial": "Hi" }'></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="src/sign-machine.js"></script>
 ```
+
 
 [![British Sign Language][bsl-img]][bsl]
 
@@ -47,16 +57,14 @@ British Sign Language finger-spelling machine - web service.
 ```
 bookmarklet/index.php
 graphics/*.gif
-includs/*.{ css js png }
-lib/*.{ php class.php bookmarklet.js user.copy.js }
+includes/*.{ js css png }
+lib/*.{ php bookmarklet.js user..js }
 wikidemo/index.php
 .htaccess
 index.php
 ```
 
-* [Compatibility: PHP 4, IE 6, Firefox 3, Safari.]
-* @author N.D.Freear, 29 August-22 September.
-* @copyright Copyright 2008 N.D.Freear.
+* Compatibility: PHP 4, IE 6, Firefox 3, Safari.
 
 > Initial commit of sign-machine aka. "BSM". Author/ Copyright 2008-08-30 Nicholas Freear (except graphics).
 

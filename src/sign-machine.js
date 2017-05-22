@@ -1,7 +1,5 @@
 /*!
-  sign-machine Version 2.
-
-  © Nick Freear, 21-May-2017.
+  sign-machine V2 | ©Nick Freear, 2017-05-21.
 */
 
 window.jQuery(function ($) {
@@ -13,8 +11,8 @@ window.jQuery(function ($) {
     lang_sign: 'sgn-GB', // OR: 'bfi'
     lang: 'en',
     label: 'British Sign Language finger spelling.',
+    initial: 'Hello!',
     ignore_re: /[^a-zA-Z]/g,
-    value: 'Hello!',
     form: '<form><label>Finger spell this <input name="sign" value="%s" required ></label><input type="submit" value="Sign"></form><p></p>',
     graphic: '<img src="%u/../../graphics/%s.gif" alt="Letter: %s" title="Letter: %s" class="letter">',
     space: '<i class="space" aria-label="space"></i>',
@@ -27,12 +25,17 @@ window.jQuery(function ($) {
     less_js: '<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>'
   };
 
-  var SM = defaults;
+  var $config = $('div[ data-sign-machine ], script[ data-sign-machine ]').first();
+  var options = $config.data();
+
+  var SM = $.extend(defaults, options ? options.signMachine : { });
 
   var W = window;
   var C = W.console;
 
-  var $script = $('script[ src *= "' + SM.script + '"]').first();
+  C.warn('SM config: ', $config.data());
+
+  var $script = $('script[ src *= "' + SM.script + '" ]').first();
 
   SM.script_url = $script.attr('src');
 
@@ -41,14 +44,12 @@ window.jQuery(function ($) {
   var $CTR = $('#' + SM.id);
 
   $CTR
-    .html(SM.form.replace(/%s/, SM.value))
+    .html(SM.form.replace(/%s/, SM.initial))
     .addClass('sign-machine-v2-js')
-    .attr({ role: 'alert', 'data-sl': SM.lang_sign, 'aria-label': SM.label })
-    // .append('<a href="' + SM.script_url + '" class="abs-url">xx</a>')
-    ;
+    .attr({ role: 'alert', 'data-sl': SM.lang_sign, 'aria-label': SM.label });
 
   var $form = $CTR.find('form');
-  var $input = $form.find('input[ name = sign ]');
+  var $input = $CTR.find('input[ name = sign ]');
   var $inner = $CTR.find('p');
 
   $form.on('submit', function (ev) {
