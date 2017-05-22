@@ -6,14 +6,14 @@
 
 ## Version 2.x
 
-Javascript to finger-spell using sign language. Currently supports British Sign Language.
+Javascript to finger-spell your text, using sign language. Currently supports British Sign Language.
 
 * Javascript, LESS, CSS, HTML, GIF,
 * GIF images: each is animated, with 3 frames, 100 x 100 pixels.
 
-```
-graphics/*.gif
-node_modules/   ~~  Via: npm install
+```sh
+graphics/{ a..z }.gif
+node_modules/    # Via: npm install
 src/sign-machine.js
 style/sign-machine.{ less css }
 index.html
@@ -22,7 +22,7 @@ package.json
 
 ### Usage
 
-HTML web-page snippet - via [RawGit][] (production):
+HTML web-page snippet — via [RawGit][] (production):
 
 ```html
 <div id="id-sign-machine">[ sign-machine requires Javascript ]</div>
@@ -31,7 +31,7 @@ HTML web-page snippet - via [RawGit][] (production):
 <script src="https://cdn.rawgit.com/nfreear/sign-machine/2.0-alpha/src/sign-machine.js"></script>
 ```
 
-Local hosting, with an optional `value` set:
+Local hosting, with an optional `initial` set:
 
 ```html
 <div id="id-sign-machine" data-sign-machine='{ "initial": "Hi" }'></div>
@@ -53,7 +53,7 @@ British Sign Language finger-spelling machine - web service.
 
 * PHP, Javascript, CSS, GIF.
 
-```
+```sh
 bookmarklet/index.php
 graphics/*.gif
 includes/*.{ js css png }
@@ -62,9 +62,11 @@ wikidemo/index.php
 index.php
 ```
 
-* Compatibility: PHP 4, IE 6, Firefox 3, Safari.
-
+> Compatibility: PHP 4, IE 6, Firefox 3, Safari.
+>
 > Initial commit of sign-machine aka. "BSM". Author/ Copyright 2008-08-30 Nicholas Freear (except graphics).
+
+---
 
 * GitHub: [nfreear/sign-machine][gh]
 * Bitbucket: [nfreear/sign-machine][bit]
@@ -82,7 +84,6 @@ License: [MIT][].
 [php]: http://freear.org.uk/sign/?text=Hello%21
 [@nfreear]: https://twitter.com/nfreear "Twitter: @nfreear"
 [blog]: http://nick.freear.org.uk "Nick Freear's blog"
-
 [RawGit]: https://rawgit.com/
     "Serves Git files with the correct mime-type; content delivery network (CDN)"
 [MIT]: https://nfreear.mit-license.org/ "MIT License"

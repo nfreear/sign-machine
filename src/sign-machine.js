@@ -14,6 +14,7 @@ window.jQuery(function ($) {
     initial: 'Hello!',
     ignore_re: /[^a-zA-Z]/g,
     form: '<form><label>Finger spell this <input name="sign" value="%s" required ></label><input type="submit" value="Sign"></form><p></p>',
+    about: '<a href="https://github.com/nfreear/sign-machine" class="about-link">sign-machine</a>',
     graphic: '<img src="%u/../../graphics/%s.gif" alt="Letter: %s" title="Letter: %s" class="letter">',
     space: '<i class="space" aria-label="space"></i>',
     script: 'sign-machine.js',
@@ -44,7 +45,7 @@ window.jQuery(function ($) {
   var $CTR = $('#' + SM.id);
 
   $CTR
-    .html(SM.form.replace(/%s/, SM.initial))
+    .html(SM.form.replace(/%s/, SM.initial) + SM.about)
     .addClass('sign-machine-v2-js')
     .attr({ role: 'alert', 'data-sl': SM.lang_sign, 'aria-label': SM.label });
 

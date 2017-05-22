@@ -1,7 +1,7 @@
 {
   "name": "sign-machine",
   "version": "2.0.0-alpha",
-  "description": "Javascript to finger-spell using sign language. Currently supports British Sign Language. ©2008-2017 Nick Freear.",
+  "description": "Javascript to finger-spell your text, using sign language. Currently supports British Sign Language. ©2008-2017 Nick Freear.",
   "license": "MIT",
   "author": "Nick Freear {@nfreear}",
   "repository": {
