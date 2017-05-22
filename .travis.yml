@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "4"
+
+git:
+  depth: 8
+
+branches:
+  only:
+    - 2.x
+
+script:
+  - npm run build
+  - npm test
+
+after_script:
+  - ls -alh style/
+
+# End.

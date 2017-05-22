@@ -1,0 +1,29 @@
+{
+  "name": "sign-machine",
+  "description": "Javascript to finger-spell using sign language. Currently supports British Sign Language. ©2008-2017 Nick Freear.",
+  "license": "UNLICENSED",
+  "author": "Nick Freear {@nfreear}",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nfreear/sign-machine"
+  },
+
+  "x-files": [
+    "graphics/*.gif",
+    "src/sign-machine.js",
+    "style/sign-machine.{ less css }",
+    "index.html"
+  ],
+
+  "devDependencies": {
+    "csslint": "^1.0.5",
+    "jquery": "^2.2.4",
+    "less": "^2.7.2",
+    "semistandard": "^11.0.0"
+  },
+
+  "scripts": {
+    "build": "node_modules/.bin/lessc style/*.less style/sign-machine.css",
+    "test": "node_modules/.bin/semistandard src/*; node_modules/.bin/csslint style/"
+  }
+}

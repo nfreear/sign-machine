@@ -1,0 +1,6 @@
+
+*.html
+*.css
+*.php
+*.log
+node_modules/
