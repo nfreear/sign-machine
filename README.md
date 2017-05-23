@@ -96,9 +96,10 @@ License: [MIT][].
 [semi]: https://github.com/Flet/semistandard "Javascript coding style — 'semistandard'"
 [semi-icon]: https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square
 
-[bsl]: https://en.wikipedia.org/wiki/British_Sign_Language "British Sign Language"
+[bsl]: https://en.wikipedia.org/wiki/British_Sign_Language
 [bsl-img-0]: https://commons.wikimedia.org/wiki/File:BSL_Name.png
 [bsl-img]: https://upload.wikimedia.org/wikipedia/commons/d/d8/BSL_Name.png
+    "'B' 'S' 'L' — British Sign Language"
 [sl-inter]: https://commons.wikimedia.org/wiki/File:Pictograms-nps-accessibility-sign_language_interpretation-2.svg
 [asl-img]: https://commons.wikimedia.org/wiki/File:Sign_language_A.svg
 [asl-2]: https://wpclipart.com/sign_language/American_ABCs/
