@@ -6,19 +6,8 @@
 
 ## Version 2.x
 
-Javascript to finger-spell your text, using sign language. Currently supports British Sign Language.
-
-* Javascript, LESS, CSS, HTML, GIF,
-* GIF images: each is animated, with 3 frames, 100 x 100 pixels.
-
-```sh
-graphics/{ a..z }.gif
-node_modules/    # Via: npm install
-src/sign-machine.js
-style/sign-machine.{ less css }
-index.html
-package.json
-```
+Javascript to embed sign-language animations — finger spell your text.
+Currently supports British Sign Language.
 
 ### Usage
 
@@ -40,8 +29,23 @@ Local hosting, with an optional `initial` set:
 <script src="src/sign-machine.js"></script>
 ```
 
+[![Screenshot][flick-img]][flickr]
 
 [![British Sign Language][bsl-img]][bsl]
+
+### 2.x files
+
+* Javascript, LESS, CSS, HTML, GIF,
+* GIF images: each is animated, with 3 frames, 100 x 100 pixels.
+
+```sh
+graphics/{ a..z }.gif
+node_modules/                      # Via: npm install
+src/sign-machine.js
+style/sign-machine.{ less → css }  # Via: lessc
+index.html
+package.json
+```
 
 ---
 
@@ -100,5 +104,8 @@ License: [MIT][].
 [asl-2]: https://wpclipart.com/sign_language/American_ABCs/
 [signing]: https://pixabay.com/en/sign-language-deaf-gesture-signing-28716/
 [gov]: https://github.com/UKHomeOffice/posters/blob/master/accessibility/posters_en-UK/deaf.pdf
+
+[flickr]: https://flickr.com/photos/nfreear/33989105994 "Screen-shot of sign-machine V2"
+[flick-img]: https://c1.staticflickr.com/5/4202/33989105994_cf11c09d5d_n.jpg
 
 [End]: //
