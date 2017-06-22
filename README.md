@@ -1,7 +1,6 @@
 
 [![Build status — Travis-CI][travis-icon]][travis]
 [![Javascript semistandard style][semi-icon]][semi]
-
 [![NPM][npm-icon]][npm]
 [![File size][size-icon]][gh]
 
@@ -15,7 +14,7 @@ Currently supports British Sign Language. [Read the blog post][post].
 ### Install ... Test
 
 ```sh
-npm install sign-machine
+npm i sign-machine
 npm run build && npm test
 ```
 
@@ -30,7 +29,7 @@ HTML web-page snippet — via [unpkg][] CDN:
 <script src="https://unpkg.com/sign-machine@2.1.0-beta#...js"></script>
 ```
 
-Or, [RawGit][] CDN:
+Or, via [RawGit][] CDN:
 
 ```html
 <script src="http://cdn.rawgit.com/nfreear/sign-machine/2.1.0-beta/src/sign-machine.js"></script>
@@ -39,7 +38,7 @@ Or, [RawGit][] CDN:
 Local hosting, with an optional `initial` set:
 
 ```html
-<div id="id-sign-machine" data-sign-machine='{ "initial": "Hi" }'></div>
+<div id="id-sign-machine" data-sign-machine='{ "initial": "Hello" }'></div>
 
 <script src="https://unpkg.com/jquery@2.2.4/dist/jquery.min.js"></script>
 <script src="src/sign-machine.js"></script>
@@ -116,7 +115,7 @@ License: [MIT][].
 [semi]: https://github.com/Flet/semistandard "Javascript coding style — 'semistandard'"
 [semi-icon]: https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square
 [size-icon]: https://img.shields.io/github/size/nfreear/sign-machine/src/sign-machine.js.svg
-    "Size of Javascript, kilo-Bytes ~ on GitHub"
+    "Tiny Javascript, kilobytes ~ on GitHub"
 [license-icon]: https://img.shields.io/npm/l/sign-machine.svg
 
 [bsl]: https://en.wikipedia.org/wiki/British_Sign_Language

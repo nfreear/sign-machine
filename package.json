@@ -21,5 +21,5 @@
     "build": "lessc style/*.less style/sign-machine.css",
     "test": "semistandard src/* && csslint style/"
   },
-  "keywords": "sign-language, BSL, hearing, hearing-loss, animate, accessibility"
+  "keywords": "sign-language, BSL, hearing, hearing-loss, spelling, animate, accessibility"
 }
