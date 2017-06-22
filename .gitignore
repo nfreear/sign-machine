@@ -1,6 +1,6 @@
 
 *.html
-# *.css
+!test/index.html
 *.php
 *.log
 node_modules/

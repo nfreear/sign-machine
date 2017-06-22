@@ -6,7 +6,7 @@
 
 ## Version 2.x
 
-Javascript to embed sign-language animations — finger spell your text.
+Javascript to easily embed sign-language animations — finger spell your text.
 Currently supports British Sign Language.
 
 ### Usage
@@ -90,7 +90,7 @@ License: [MIT][].
 [blog]: http://nick.freear.org.uk "Nick Freear's blog"
 [RawGit]: https://rawgit.com/
     "Serves Git files with the correct mime-type; content delivery network (CDN)"
-[MIT]: https://nfreear.mit-license.org/ "MIT License"
+[MIT]: https://nfreear.mit-license.org/2008-2017#!-sign-machine "MIT License"
 [travis]: https://travis-ci.org/nfreear/sign-machine "Build status – Travis-CI (NPM/eslint)"
 [travis-icon]: https://api.travis-ci.org/nfreear/sign-machine.svg
 [semi]: https://github.com/Flet/semistandard "Javascript coding style — 'semistandard'"
