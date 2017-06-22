@@ -2,22 +2,38 @@
 [![Build status — Travis-CI][travis-icon]][travis]
 [![Javascript semistandard style][semi-icon]][semi]
 
+[![NPM][npm-icon]][npm]
+[![File size][size-icon]][gh]
+
 # nfreear / sign-machine
 
 ## Version 2.x
 
 Javascript to easily embed sign-language animations — finger spell your text.
-Currently supports British Sign Language.
+Currently supports British Sign Language. [Read the blog post][post].
+
+### Install ... Test
+
+```sh
+npm install sign-machine
+npm run build && npm test
+```
 
 ### Usage
 
-HTML web-page snippet — via [RawGit][] (production):
+HTML web-page snippet — via [unpkg][] CDN:
 
 ```html
 <div id="id-sign-machine">[ sign-machine requires Javascript ]</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdn.rawgit.com/nfreear/sign-machine/2.0-alpha/src/sign-machine.js"></script>
+<script src="https://unpkg.com/jquery@2.2.4/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/sign-machine@2.1.0-beta#...js"></script>
+```
+
+Or, [RawGit][] CDN:
+
+```html
+<script src="http://cdn.rawgit.com/nfreear/sign-machine/2.1.0-beta/src/sign-machine.js"></script>
 ```
 
 Local hosting, with an optional `initial` set:
@@ -25,7 +41,7 @@ Local hosting, with an optional `initial` set:
 ```html
 <div id="id-sign-machine" data-sign-machine='{ "initial": "Hi" }'></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/jquery@2.2.4/dist/jquery.min.js"></script>
 <script src="src/sign-machine.js"></script>
 ```
 
@@ -83,18 +99,25 @@ License: [MIT][].
 © 2008-2017 [Nick Freear][blog]. [@nfreear][].
 
 
+[npm]: https://npmjs.com/package/sign-machine
+[npm-icon]: https://img.shields.io/npm/v/sign-machine.svg "Latest version ~ on NPM"
 [gh]: https://github.com/nfreear/sign-machine
 [bit]: https://bitbucket.org/nfreear/sign-machine
 [php]: http://freear.org.uk/sign/?text=Hello%21
 [@nfreear]: https://twitter.com/nfreear "Twitter: @nfreear"
-[blog]: http://nick.freear.org.uk "Nick Freear's blog"
+[post]: http://nick.freear.org.uk/2017/05/22/sign-machine.html?utm_source=readme "Sign-machine rebooted, 22 May 2017"
+[blog]: http://nick.freear.org.uk/?utm_source=readme "Nick Freear's blog"
 [RawGit]: https://rawgit.com/
-    "Serves Git files with the correct mime-type; content delivery network (CDN)"
+    "RawGit serves Git files with the correct mime-type; a content delivery network (CDN)"
+[unpkg]: https://unpkg.com/ "unpkg is a fast content delivery network for everything on npm"
 [MIT]: https://nfreear.mit-license.org/2008-2017#!-sign-machine "MIT License"
 [travis]: https://travis-ci.org/nfreear/sign-machine "Build status – Travis-CI (NPM/eslint)"
 [travis-icon]: https://api.travis-ci.org/nfreear/sign-machine.svg
 [semi]: https://github.com/Flet/semistandard "Javascript coding style — 'semistandard'"
 [semi-icon]: https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square
+[size-icon]: https://img.shields.io/github/size/nfreear/sign-machine/src/sign-machine.js.svg
+    "Size of Javascript, kilo-Bytes ~ on GitHub"
+[license-icon]: https://img.shields.io/npm/l/sign-machine.svg
 
 [bsl]: https://en.wikipedia.org/wiki/British_Sign_Language
 [bsl-img-0]: https://commons.wikimedia.org/wiki/File:BSL_Name.png

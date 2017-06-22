@@ -1,4 +1,6 @@
 
+*.js
+!src/sign-machine.js
 *.html
 !test/index.html
 *.php

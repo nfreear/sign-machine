@@ -26,7 +26,7 @@ window.jQuery(function ($) {
     less_js: '<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>'
   };
 
-  var $config = $('div[ data-sign-machine ], script[ data-sign-machine ]').first();
+  var $config = $('div, script').filter('[ data-sign-machine ]').first();
   var options = $config.data();
 
   var SM = $.extend(defaults, options ? options.signMachine : { });
@@ -36,7 +36,8 @@ window.jQuery(function ($) {
 
   C.warn('SM config: ', $config.data());
 
-  var $script = $('script[ src *= "' + SM.script + '" ]').first();
+  // Prepare for 'unpkg' CDN hosting.
+  var $script = $('script').filter('[ src *= "' + SM.script + '" ], [ src *= "sign-machine@" ]').first();
 
   SM.script_url = $script.attr('src');
 
@@ -116,6 +117,12 @@ window.jQuery(function ($) {
         .append(SM.less_js)
         .append(SM.less_link.replace(/%s/, SM.script_url + SM.less_url));
     } else {
+      // Prepare for 'unpkg' CDN hosting.
+      if (/@\d\.\d\.\d(-[\w.]+)(#|_.js|$)/.test(SM.script_url)) {
+        C.warn('SM: npm @version found');
+        SM.css_url = SM.css_url.replace('/../..', '');
+        SM.script_url = SM.script_url.replace(/(#.*|_\.js)/, '');
+      }
       $head.append(SM.css_link.replace(/%s/, SM.script_url + SM.css_url));
     }
   }

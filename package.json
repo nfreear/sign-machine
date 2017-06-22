@@ -1,16 +1,19 @@
 {
   "name": "sign-machine",
-  "version": "2.0.0-alpha",
+  "version": "2.1.0-beta",
   "description": "Easily embed sign-language animations - finger spell your text. Currently supports British Sign Language.",
   "license": "MIT",
+  "main": "src/sign-machine.js",
   "browser": "src/sign-machine.js",
   "author": "Nick Freear {@nfreear}",
   "repository": "https://github.com/nfreear/sign-machine",
   "bugs": "https://github.com/nfreear/sign-machine",
   "homepage": "http://nick.freear.org.uk/2017/05/22/sign-machine.html?utm_source=npm",
+  "dependencies": {
+    "jquery": "^2.2.4"
+  },
   "devDependencies": {
     "csslint": "^1.0.5",
-    "jquery": "^2.2.4",
     "less": "^2.7.2",
     "semistandard": "^11.0.0"
   },
