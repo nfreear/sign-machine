@@ -20,19 +20,19 @@ npm run build && npm test
 
 ### Usage
 
-HTML web-page snippet — via [unpkg][] CDN:
+HTML web-page snippet — via [unpkg][] CDN ([browse][unlist]):
 
 ```html
 <div id="id-sign-machine">[ sign-machine requires Javascript ]</div>
 
-<script src="https://unpkg.com/jquery@2.2.4/dist/jquery.min.js"></script>
-<script src="https://unpkg.com/sign-machine@2.1.0-beta#...js"></script>
+<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/sign-machine@2.2.0#...js"></script>
 ```
 
 Or, via [RawGit][] CDN:
 
 ```html
-<script src="http://cdn.rawgit.com/nfreear/sign-machine/2.1.0-beta/src/sign-machine.js"></script>
+<script src="http://cdn.rawgit.com/nfreear/sign-machine/2.2.0/src/sign-machine.js"></script>
 ```
 
 Local hosting, with an optional `initial` set:
@@ -40,7 +40,7 @@ Local hosting, with an optional `initial` set:
 ```html
 <div id="id-sign-machine" data-sign-machine='{ "initial": "Hello" }'></div>
 
-<script src="https://unpkg.com/jquery@2.2.4/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="src/sign-machine.js"></script>
 ```
 
@@ -95,7 +95,7 @@ index.php
 
 License: [MIT][].
 
-© 2008-2017 [Nick Freear][blog]. [@nfreear][].
+© 2008-2018 [Nick Freear][blog]. [@nfreear][].
 
 
 [npm]: https://npmjs.com/package/sign-machine
@@ -109,6 +109,7 @@ License: [MIT][].
 [RawGit]: https://rawgit.com/
     "RawGit serves Git files with the correct mime-type; a content delivery network (CDN)"
 [unpkg]: https://unpkg.com/ "unpkg is a fast content delivery network for everything on npm"
+[unlist]: https://unpkg.com/sign-machine@^2/ "Browse on Unpkg.com"
 [MIT]: https://nfreear.mit-license.org/2008-2017#!-sign-machine "MIT License"
 [travis]: https://travis-ci.org/nfreear/sign-machine "Build status – Travis-CI (NPM/eslint)"
 [travis-icon]: https://api.travis-ci.org/nfreear/sign-machine.svg

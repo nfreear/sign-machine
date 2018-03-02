@@ -1,6 +1,6 @@
 language: node_js
-node_js:
-  - "4"
+
+node_js: 7
 
 git:
   depth: 8
@@ -9,9 +9,9 @@ branches:
   only:
     - 2.x
 
-script:
-  - npm run build
-  - npm test
+before_script: npm run build
+
+script: npm test
 
 after_script:
   - ls -alh style/

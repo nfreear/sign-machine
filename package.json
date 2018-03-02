@@ -1,25 +1,27 @@
 {
   "name": "sign-machine",
-  "version": "2.1.0-beta",
+  "version": "2.2.0",
   "description": "Easily embed sign-language animations - finger spell your text. Currently supports British Sign Language.",
   "license": "MIT",
   "main": "src/sign-machine.js",
   "browser": "src/sign-machine.js",
   "author": "Nick Freear {@nfreear}",
-  "repository": "https://github.com/nfreear/sign-machine",
-  "bugs": "https://github.com/nfreear/sign-machine",
-  "homepage": "http://nick.freear.org.uk/2017/05/22/sign-machine.html?utm_source=npm",
-  "dependencies": {
-    "jquery": "^2.2.4"
-  },
+  "repository": "https://github.com/nfreear/sign-machine.git",
+  "bugs": "https://github.com/nfreear/sign-machine/issues",
+  "homepage": "https://nick.freear.org.uk/2017/05/22/sign-machine.html?utm_source=npm",
+  "dependencies": { },
   "devDependencies": {
     "csslint": "^1.0.5",
     "less": "^2.7.2",
+    "replace": "^0.3.0",
     "semistandard": "^11.0.0"
   },
+  "peerDependencies": {
+    "jquery": "^3.3.1"
+  },
   "scripts": {
-    "build": "lessc style/*.less style/sign-machine.css",
-    "test": "semistandard src/* && csslint style/"
+    "build": "src/_ver.js && lessc style/*.less style/sign-machine.css",
+    "test": "semistandard && csslint style/"
   },
   "keywords": "sign-language, BSL, hearing, hearing-loss, spelling, animate, accessibility"
 }

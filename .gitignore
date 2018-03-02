@@ -1,8 +1,12 @@
 
 *.js
+!src/_ver.js
 !src/sign-machine.js
 *.html
 !test/index.html
 *.php
 *.log
 node_modules/
+package-lock.json
+
+# End.
