@@ -26,7 +26,7 @@ HTML web-page snippet — via [unpkg][] CDN ([browse][unlist]):
 <div id="id-sign-machine">[ sign-machine requires Javascript ]</div>
 
 <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
-<script src="https://unpkg.com/sign-machine@2.2.0#...js"></script>
+<script src="https://unpkg.com/sign-machine@^2#._.js"></script>
 ```
 
 Or, via [RawGit][] CDN:

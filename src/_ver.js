@@ -8,7 +8,7 @@
 */
 
 const replace = require('replace');
-const INDEX_JS = path('/../src/sign-machine.js');
+// const INDEX_JS = path('/../src/sign-machine.js');
 const README = path('/../README.md');
 const INDEX_HTML = path('/../test/index.html');
 const PKG = require('../package');
@@ -49,16 +49,6 @@ replace({
   count: true,
   recursive: false
 });
-
-if (argvCheck('--all')) {
-
-  require('fs').writeFileSync(VERSION_FILE, version(VERSION_JS));
-}
-
-function argvCheck (flag) {
-  return process.argv[ process.argv.length - 1 ] === flag;
-  // return process.argv.includes(flag); // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
-}
 
 function path (file) {
   return require('path').join(__dirname, file);
